@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Information Form</title>
+<style>
+  .form-field {
+    margin-bottom: 1.5rem; /* Increased space between fields */
+  }
+</style>
+</head>
 <body>
 
 <h2>Customer Information Form</h2>
 
-<form action="/MyServlet" method="post">  <div class="form-field">
+<form >
+  <div class="form-field">
     <label for="fname">Name:</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
   </div>
@@ -31,13 +42,13 @@
     <label for="favitem">Favourite Item:</label>
     <br>
     <input type="radio" id="item-1" name="favitem" value="item1">
-    <label for="item-1">Item 1</label>
+    <label for="item-1">mango</label>
     <br>
     <input type="radio" id="item-2" name="favitem" value="item2">
-    <label for="item-2">Item 2</label>
+    <label for="item-2">kit kat</label>
     <br>
     <input type="radio" id="item-3" name="favitem" value="item3">
-    <label for="item-3">Item 3</label>
+    <label for="item-3">parota</label>
   </div>
   <br>
   <div class="form-field">
@@ -49,12 +60,5 @@
   <button type="reset">Reset</button>
 </form>
 
-<style>
-.form-field {
-  margin-bottom: 15px; /* Add space between fields */
-}
-</style>
-
 </body>
 </html>
-
